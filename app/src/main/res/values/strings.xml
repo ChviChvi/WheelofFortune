@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">s215832/cvin Lykkehjulet</string>
+
+
+    <string name="score">Score: %d</string>
+    <string name="category">Category: %s</string>
+
+    <!--
+    alphabet
+    -->
+
+    <string name="Alphabet_A">A</string>
+    <string name="Alphabet_B">B</string>
+    <string name="Alphabet_C">C</string>
+    <string name="Alphabet_D">D</string>
+    <string name="Alphabet_E">E</string>
+    <string name="Alphabet_F">F</string>
+    <string name="Alphabet_G">G</string>
+    <string name="Alphabet_H">H</string>
+    <string name="Alphabet_I">I</string>
+    <string name="Alphabet_J">J</string>
+    <string name="Alphabet_K">K</string>
+    <string name="Alphabet_L">L</string>
+    <string name="Alphabet_M">M</string>
+    <string name="Alphabet_N">N</string>
+    <string name="Alphabet_O">O</string>
+    <string name="Alphabet_P">P</string>
+    <string name="Alphabet_Q">Q</string>
+    <string name="Alphabet_R">R</string>
+    <string name="Alphabet_S">S</string>
+    <string name="Alphabet_T">T</string>
+    <string name="Alphabet_U">U</string>
+    <string name="Alphabet_V">V</string>
+    <string name="Alphabet_W">W</string>
+    <string name="Alphabet_X">X</string>
+    <string name="Alphabet_Y">Y</string>
+    <string name="Alphabet_Z">Z</string>
+
+
+</resources>
