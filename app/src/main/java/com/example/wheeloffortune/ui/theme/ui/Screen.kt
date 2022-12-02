@@ -148,54 +148,6 @@ fun Screen (modifier: Modifier = Modifier,
         )
     }
 
-
-}
-
-@Composable
-fun Letter(currentScrambledWord: String,
-           modifier: Modifier = Modifier,){
-    val myList: SnapshotStateList<String> = remember {
-        mutableStateListOf()
-    }
-    val color = remember {
-        mutableStateOf(Color.Green)
-    }
-
-    Column(horizontalAlignment = Alignment.CenterHorizontally) {
-
-        var selected by remember { mutableStateOf(false) }
-        val color = if (selected) Color.Gray else Color.Yellow
-
-
-
-        Button(
-            onClick = { selected  = !selected
-
-                      },
-            colors = ButtonDefaults.buttonColors(backgroundColor = color),
-            modifier = Modifier
-                .height(10.dp)
-                .width(20.dp),
-            enabled = true
-        ){
-            Text("B")
-        }
-        //here
-        
-//        Box(modifier = modifier
-//            .background(color.value)
-//            .clickable {
-//                color.value = Color(
-//                    Random.nextFloat(),
-//                    Random.nextFloat(),
-//                    Random.nextFloat(),
-//                    1f
-//                )
-//            }
-//        )
-
-    }
-    
 }
 
 @Composable
