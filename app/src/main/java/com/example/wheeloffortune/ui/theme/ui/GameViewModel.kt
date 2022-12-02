@@ -2,7 +2,7 @@ package com.example.wheeloffortune.ui.theme.ui
 /**
  *  Project:"Wheel of Fortune" made by Christiaan Vink s215832/cvin
  *
- *  I want to state that I have used the code lab:
+ *  I want to state that I have used the code lab as it was very helpful:
  *  https://developer.android.com/codelabs/basic-android-kotlin-compose-viewmodel-and-state#0
  *  Therefore it could be possible that there is code which looks similar(or is the same) to this.
  *
@@ -27,9 +27,6 @@ private var points: Int = 0
 private lateinit var chosen_word: categoryandword
 private lateinit var chosen_category: String
 
-
-
-// Set of words used in the game
 private var usedWords: MutableSet<String> = mutableSetOf()
 private var usedLetters: MutableSet<String> = mutableSetOf()
 
@@ -55,7 +52,6 @@ class GameViewModel : ViewModel() {
                     currentState.copy(avaliable_letters = _uiState.value.avaliable_letters+ " " + userGuess)
                 }
 
-
                 if (currentWord.contains(userGuess, ignoreCase = true)) {
 
                     for (ch in currentWord.iterator()) {
@@ -75,15 +71,11 @@ class GameViewModel : ViewModel() {
 
                             //check if the word is completed
                             if (!hiddenWord.contains("_", ignoreCase = true)) {
-                                // TODO: YOU WIN
-
                                 println("gooooodjobbb")
                                 _uiState.update { currentState ->
                                     currentState.copy(isGameWon = true)
                                 }
                             }
-
-
                         }
                         index++
                         println(currentWord)
@@ -147,7 +139,6 @@ class GameViewModel : ViewModel() {
                 currentState.copy(isGuessedWordWrong = true)
             }
         }
-        //TODO: pointmultiplier
 
         if (wheelturn == 0){
 
@@ -181,7 +172,6 @@ class GameViewModel : ViewModel() {
 
 
         updateUserGuess("")
-        //TODO: wheel
 
         if(!mistake){
             val wheelboolean = _uiState.value.show_wheel
@@ -217,16 +207,6 @@ class GameViewModel : ViewModel() {
             }
             return hiddenWord
         }
-    }
-
-    private fun shuffleCurrentWord(word: String): String {
-        val tempWord = word.toCharArray()
-        // Scramble the word
-        tempWord.shuffle()
-        while (String(tempWord).equals(word)) {
-            tempWord.shuffle()
-        }
-        return String(tempWord)
     }
 
     fun updateUserGuess(guessedWord: String){
@@ -273,31 +253,6 @@ class GameViewModel : ViewModel() {
 
 
     }
-
-//    private fun updateGameState(updatedScore: Int) {
-//        if (usedWords.size == LIFES){
-//            _uiState.update { currentState ->
-//                currentState.copy(
-//                    isGuessedWordWrong = false,
-//                    isGuessedtoomanyletters = false,
-//                    score = updatedScore,
-//                    category = currentState.category,
-//                    isGameOver = true
-//                )
-//            }
-//        } else {
-//            _uiState.update { currentState ->
-//                currentState.copy(
-//                    isGuessedWordWrong = false,
-//                    isGuessedtoomanyletters = false,
-//                    category = currentState.category,
-//                    currentScrambledWord = pickRandomWordAndShuffle(),
-//                    score = updatedScore
-//                )
-//            }
-//        }
-//    }
-
 
     fun resetGame() {
         //usedWords.clear()

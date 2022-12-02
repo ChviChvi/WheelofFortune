@@ -2,7 +2,7 @@ package com.example.wheeloffortune.ui.theme.ui
 /**
  *  Project:"Wheel of Fortune" made by Christiaan Vink s215832/cvin
  *
- *  I want to state that I have used the code lab:
+ *  I want to state that I have used the code lab as it was very helpful:
  *  https://developer.android.com/codelabs/basic-android-kotlin-compose-viewmodel-and-state#0
  *  Therefore it could be possible that there is code which looks similar(or is the same) to this.
  *
