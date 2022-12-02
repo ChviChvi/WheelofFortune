@@ -3,6 +3,7 @@
 
 
     <string name="score">Score: %d</string>
+    <string name="lifes">Lifes: %d</string>
     <string name="category">Category: %s</string>
 
     <!--
