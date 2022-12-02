@@ -2,10 +2,17 @@
     <string name="app_name">s215832/cvin Lykkehjulet</string>
 
 
-    <string name="score">Score: %d</string>
-    <string name="lifes">Lifes: %d</string>
+    <string name="score">DKK: %d</string>
+    <string name="lives">Lives: %d</string>
     <string name="category">Category: %s</string>
 
+
+    <string name="win">You win!</string>
+    <string name="lose">You lost</string>
+
+    <string name="finalscore">You won %d kroner!</string>
+    <string name="playagain">Play again</string>
+    <string name="exitgame">Exit Game</string>
     <!--
     alphabet
     -->
